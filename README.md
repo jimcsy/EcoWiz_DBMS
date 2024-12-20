@@ -1,6 +1,6 @@
 <h1 align ="center">
   <br>
-  <img src="Ecowiz/assets/logo.png" alt="icon" height="120" /img> 
+  <img src="assets/logo.png" alt="icon" height="120" /img> 
   <br>
   <strong>
   🛒 ECO-FRIENDLY POS SYSTEM
@@ -11,8 +11,7 @@
 Table of Contents: 
 ---
 
-1. [Project Overview](#i-project-overview)
-
+1. [Project Overview](#i-project-overview)  
 2. [SQL Queries](#ii-sql-queries)
 3. [CRUD Operation Integration](#iii-crud-operation-integration)
 4. [Schema](#iv-schema)
@@ -39,7 +38,7 @@ Discover more: [Features](#features) • [Goal](#goal) • [Limitation](#limitat
 ###   &nbsp;&nbsp;🚧&nbsp;&nbsp;**LIMITATION**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project does not cover administrative features such as checking product availability, updating product prices, or managing product quantities. Although these features would add value to the system, they were excluded due to time constraints and the creators' involvement in other ongoing projects. 
 
-## II. SQL QUERIES 📊
+## II. SQL QUERIES&nbsp;📊
 1. **Customer Table** - Stores customer details such as   `customer_id`, `user_name`, `user_password`, and `eco_points`. The customer_id is auto-incremented, starting from 10000.
 ```SQL
 CREATE TABLE customer (
@@ -109,7 +108,7 @@ CREATE TABLE transaction_product (
 );
 ```
 
-## III. CRUD OPERATION INTEGRATION 🔄
+## III. CRUD OPERATION INTEGRATION&nbsp;🔄
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To build the connection between MySQL Workbench and the Java program, JDBC (Java Database Connectivity) was utilized. Below is the integration of the Create, Read, Update, and Delete operations.
 
@@ -257,9 +256,9 @@ public boolean deleteAccount() {
     }
 ```
 
-## IV. SCHEMA 🗂️
+## IV. SCHEMA&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here’s the schema created using `dbdiagram.io`. Below is the explanation of the existing entity relationships in the database.
-![Schema](Ecowiz/src/db/schema.png)
+![Schema](src/db/schema.png)
 #### 1. **Customer and User_Transaction**
 - **Relationship**: One-to-Many (One customer can have many transactions).
 - Each transaction is associated with a single customer, but a customer can have multiple transactions over time.
@@ -341,7 +340,7 @@ Locate the `DatabaseConnection.java` file in your `VsCode` and update the values
       java -cp "out; path\to\your\mysql-connector-java.jar" main.Ecowiz
       ```
 
-About the Developer 🧑‍💻
+About the Developer&nbsp;🧑‍💻
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Good day! I am **Genesis**, the developer of **Ecowiz**, an eco-friendly Point of Sale (POS) system. This project was developed as part of the requirements for my **Database Management System** course.
 
